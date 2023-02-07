@@ -4,33 +4,55 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-		<div class="max-w-full">
-				<div class="flex flex-col flex-auto items-center sm:justify-center min-w-0 md:p-8">
-						<div class="flex md:w-full md:max-w-6xl sm:rounded-2xl sm:shadow overflow-hidden sm:bg-white">
-								<div class="w-full sm:w-auto py-8 px-4 sm:p-12 md:p-16">
-										<div class="w-full max-w-80 sm:w-80 mx-auto sm:mx-0">
-												<div class="logo mb-2">
-														<img src="https://www.weltew.com/assets/images/weltew-logo.svg" alt="Weltew Home" width="290" height="28">
-												</div>
-												<div class="flex gap-2 text-center items-center w-full justify-center">
-														<a href="">Üye Girişi</a>
-														<a href="">Üye Ol</a>
-												</div>
-												<form>
-														<div class="flex flex-col sm:flex-row">
-																<label for="">E-postanız</label>
-																<input type="text" id="large-input"
-																							class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-														</div>
-												</form>
-										</div>
-								</div>
-								<div class="w-full">
-										<img src="https://www.weltew.com/assets/images/login.png" alt="" class="w-full">
-								</div>
-						</div>
-				</div>
-		</div>
+
+ <div class="flex flex-col flex-auto items-center sm:justify-center min-w-0 md:p-8">
+  <div class="flex md:w-full md:max-w-6xl sm:rounded-2xl sm:shadow overflow-hidden bg-white">
+   <!--    sm:w-auto py-8 px-4 sm:p-12 md:p-16-->
+   <div class="w-full ">
+    <div class="w-full py-12">
+     <div class="mb-2 flex items-center justify-center">
+      <img src="https://www.weltew.com/assets/images/weltew-logo.svg" alt="Weltew Home" width="290" height="28">
+     </div>
+     <div class="mb-4 text-center">
+      <a href="">Üye Girişi</a>
+      <a href="">Üye Ol</a>
+     </div>
+     <form>
+      <div class="md:flex mb-6 px-12 items-center">
+       <div class="md:w-1/3">
+        <label class="block text-gray-600 font-medium md:text-left mb-3 md:mb-0" for="my-textfield">E-Postanız</label>
+       </div>
+       <div class="md:w-2/3">
+        <input class="block text-gray-700 rounded-sm border border-gray-200 block w-full focus:outline-cyan-500 focus:bg-white focus:border-green-700 px-4 py-2.5 " id="my-textfield" type="text" placeholder="E-Postanız">
+       </div>
+      </div>
+      <div class="md:flex mb-6 px-12 items-center">
+       <div class="md:w-1/3">
+        <label class="block text-gray-600 font-medium md:text-left mb-3 md:mb-0" for="my-textfield">Şifre</label>
+       </div>
+       <div class="md:w-2/3">
+        <input class="block text-gray-700 rounded-sm border border-gray-200 block w-full focus:outline-cyan-500 focus:bg-white focus:border-green-700 px-4 py-2.5 " id="my-textfield" type="text" placeholder="Şifre">
+       </div>
+      </div>
+
+
+      <div class="md:flex md:items-center">
+       <div class="md:w-1/3"></div>
+       <div class="md:w-2/3">
+        <button class="shadow bg-yellow-700 hover:bg-yellow-500 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+         Save
+        </button>
+       </div>
+      </div>
+     </form>
+    </div>
+   </div>
+   <div class="relative hidden md:flex flex-auto w-full items-center justify-center h-full overflow-hidden dark:border-l">
+    <img src="https://www.weltew.com/assets/images/login.png" alt="">
+   </div>
+  </div>
+ </div>
+
 </template>
 
 <style scoped>
