@@ -1,5 +1,6 @@
 @import './base.css';
 @import "fonts/poppins/poppins.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,5 +10,33 @@ body {
     background-color: rgb(241, 245, 249);
 }
 
+/*Form Checkbox*/
+input[type=checkbox] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #bfbfbf;
+    border-radius: 4px;
+    outline: 0 !important;
+    top: 0;
+}
 
+input[type=checkbox]:before {
+    content: "";
+    background: #fec33b;
+    width: 9px;
+    height: 9px;
+    display: block;
+    margin: 3px auto;
+    opacity: 0;
+}
+
+input[type=checkbox]:checked:before {
+    opacity: 1;
+}
+
+/*Form Checkbox*/
 
