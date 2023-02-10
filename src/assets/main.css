@@ -40,3 +40,31 @@ input[type=checkbox]:checked:before {
 
 /*Form Checkbox*/
 
+
+/*Navbar*/
+.navbar-collapse {
+    background: #f0f0f0;
+}
+
+.navbar-item {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 10px;
+}
+
+.navbar-item .item {
+    display: block;
+    float: left;
+    position: relative;
+}
+
+.navbar-item .item a {
+    color: #0c3b5d;
+    float: left;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    padding: 18px 20px;
+}
+
+/*NAVBAR END*/
