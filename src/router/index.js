@@ -33,6 +33,11 @@ const router = createRouter({
       path: '/hesabim',
       name: 'hesabim',
       component: () => import('../views/Account.vue')
+    },
+    {
+      path: '/iletisim',
+      name: 'iletisim',
+      component: () => import('../views/Contact.vue')
     }
   ]
 })
