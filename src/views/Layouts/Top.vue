@@ -1,6 +1,6 @@
 <template>
  <div class="top bg-gray-50 border-b hidden sm:block">
-  <div class="container max-w-7xl mx-auto px-8">
+  <div class="container max-w-8xl mx-auto px-8">
    <div class="flex items-center justify-between w-full">
     <div class="py-1.5">sad</div>
     <div class="py-1.5">sad</div>

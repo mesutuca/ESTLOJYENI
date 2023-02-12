@@ -15,7 +15,7 @@
  <br>
  <br>
  <br>
- <div>
+ <div class="hidden">
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cumque dolores illo, iure neque numquam provident vel voluptatibus? Commodi dicta dolorem explicabo maiores nesciunt perspiciatis quae repellendus ullam veniam voluptatibus!
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cumque dolores illo, iure neque numquam provident vel voluptatibus? Commodi dicta dolorem explicabo maiores nesciunt perspiciatis quae repellendus ullam veniam voluptatibus!
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cumque dolores illo, iure neque numquam provident vel voluptatibus? Commodi dicta dolorem explicabo maiores nesciunt perspiciatis quae repellendus ullam veniam voluptatibus!
@@ -34,6 +34,7 @@
 <script setup>
 import Carousel from "@/components/Fancy/Carousel.vue";
 import {ref} from "vue";
+
 const getUyelik = [
  {
   title: 'asd',

@@ -4,7 +4,7 @@
  <br>
  <br>
  <div class="2xl:container h-screen m-auto ">
-  <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-white">
+  <div class="container max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 bg-white">
    <div class="flex">
     <div class="w-4/12">
      <ul class="space-y-6 py-6">

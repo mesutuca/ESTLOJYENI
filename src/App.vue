@@ -5,7 +5,6 @@
   <Nav/>
   <router-view/>
  </div>
-
 </template>
 <script setup>
 import {provide, ref, onMounted, onUnmounted, computed, watch,} from "vue";
@@ -17,6 +16,7 @@ import Top from "@/views/Layouts/Top.vue";
 const openMenu = ref(false)
 provide('openMenu', openMenu)
 
+
 function useBreakpoints() {
  let windowWidth = ref(window.innerWidth)
  const onWidthChange = () => windowWidth.value = window.innerWidth
@@ -24,25 +24,21 @@ function useBreakpoints() {
  onUnmounted(() => window.removeEventListener('resize', onWidthChange))
  const type = computed(() => {
   if (windowWidth.value < 550) {
-   return 'md1'
+   return 'mobile'
   }
   if (windowWidth.value >= 550 && windowWidth.value < 1200) {
-   return 'md2'
+   return 'tablet'
   }
   if (windowWidth.value >= 1200) {
-   return 'md3'
+   return 'desktop'
   }
   return null;
  })
  const width = computed(() => windowWidth.value)
  return {width, type}
 }
-
 const {width, type} = useBreakpoints()
-watch(() => type.value, () => {
- console.log(type.value)
-});
-
+provide('screenType', type)
 
 </script>
 <style scoped>

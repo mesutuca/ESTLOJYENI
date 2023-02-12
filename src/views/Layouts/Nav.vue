@@ -1,19 +1,34 @@
 <template>
- <div class="bg-gray-50 uppercase sm:sticky sm:top-0 sm:z-40 lg:block sm:shadow-sm responsive-navigation" :class="{'showMenu':openMenu}">
-  <div class="container max-w-7xl mx-auto">
+ <div class="bg-gray-50 uppercase sm:sticky sm:top-0 sm:z-40 lg:block sm:shadow-sm responsive-navigation sm:border-b" :class="{'showMenu':openMenu}">
+  <div class="container max-w-8xl mx-auto">
    <nav class="navigation">
     <ul class="navbar-item">
      <li class="item">
-      <RouterLink to="">Anasayfa</RouterLink>
+      <RouterLink to="">YÜZÜK</RouterLink>
      </li>
      <li class="item">
-      <RouterLink to="/about">Urun</RouterLink>
+      <RouterLink to="/about">KOLYE</RouterLink>
      </li>
      <li class="item">
-      <RouterLink to="">Anasayfa</RouterLink>
+      <RouterLink to="">KÜPE</RouterLink>
      </li>
      <li class="item">
-      <RouterLink to="/iletisim">İLETİŞİM</RouterLink>
+      <RouterLink to="">BİLEKLİK</RouterLink>
+     </li>
+     <li class="item">
+      <RouterLink to="">BİLEZİK</RouterLink>
+     </li>
+     <li class="item">
+      <RouterLink to="">ALYANS</RouterLink>
+     </li>
+     <li class="item">
+      <RouterLink to="">SAAT</RouterLink>
+     </li>
+     <li class="item">
+      <RouterLink to="">BEBEK</RouterLink>
+     </li>
+     <li class="item">
+      <RouterLink to="/iletisim">ÇOK SATANLAR</RouterLink>
      </li>
     </ul>
    </nav>
@@ -23,7 +38,6 @@
 
 <script setup>
 import {inject, provide, ref} from "vue";
-
 const openMenu = inject('openMenu')
 
 </script>
