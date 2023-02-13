@@ -1,38 +1,59 @@
 <template>
- <br>
- <br>
- <br>
- <br>
- <div class="2xl:container h-screen m-auto ">
-  <div class="container max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 bg-white">
-   <div class="flex">
-    <div class="w-4/12">
-     <ul class="space-y-6 py-6">
-      <li>Üye Bilgilerim</li>
-      <li>İletişim Tercihlerim</li>
-      <li>Adres Defteri</li>
-      <li>Adres Defteri</li>
-     </ul>
-    </div>
-    <div class="w-8/12">
+
+		<div class="container max-w-8xl mx-auto py-6 sm:px-6 lg:px-8">
+				<div class="flex">
+						<div class="w-4/12">
+								<ul class="space-y-6 py-6">
+										<li>Üyelik Bilgilerim</li>
+										<li>İletişim Tercihlerim</li>
+										<li>Adres Defteri</li>
+										<li>
+												<a href="" class="flex flex-row">
+														<div>
+																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24"
+																					height="24" fill="#ff6000">
+																		<defs>
+																				<path id="a" d="M0 0h24v24H0z"/>
+																		</defs>
+																		<g fill-rule="evenodd">
+																				<mask id="b" fill="#fff">
+																						<use xlink:href="#a"/>
+																				</mask>
+																				<g mask="url(#b)">
+																						<path
+																											d="M18.524 0a2.253 2.253 0 011.996 1.204l.074.153 2.39 5.832c.17.316.266.677.266 1.061v13.5A2.25 2.25 0 0121 24H3a2.25 2.25 0 01-2.25-2.25V8.25c0-.384.096-.745.265-1.06l2.4-5.853A2.25 2.25 0 015.298.007L5.475 0h13.05zM21 7.5H3a.75.75 0 00-.75.75v13.5c0 .414.336.75.75.75h18a.75.75 0 00.75-.75V8.25A.75.75 0 0021 7.5zM18.75 18a.75.75 0 110 1.5h-4.5a.75.75 0 110-1.5zm-7.5-16.5H5.473a.752.752 0 00-.63.335l-.049.09L3.125 6h8.125V1.5zm7.276 0H12.75V6h8.124l-1.66-4.055a.75.75 0 00-.578-.437l-.11-.008z"/>
+																				</g>
+																		</g>
+																</svg>
+														</div>
+														<span>Sipariş ve iade</span>
+												</a>
+												<ul>
+														<li>Siparişlerim</li>
+												</ul>
+										</li>
+										<li>Güvenli Çıkış</li>
+								</ul>
+						</div>
+						<div class="w-8/12 py-6">
+								asdasd
 
 
+						</div>
+				</div>
+		</div>
 
-    </div>
-   </div>
-  </div>
- </div>
 </template>
 
 <script>
 export default {
- name: "Account",
- data() {
-  return {
-   password: '',
-   showPasswordField: true
-  }
- }
+		name: "Account",
+		data() {
+				return {
+						password: '',
+						showPasswordField: true
+				}
+		}
 }
 </script>
 
