@@ -1,6 +1,6 @@
 <template>
 
- <header class="sticky top-0 bg-white z-50 border-b md:relative sm:py-8 py-4">
+ <header class="sticky top-0 bg-white z-50 border-b md:relative sm:py-8 py-5">
   <div class="container max-w-8xl h-full mx-auto px-4 sm:px-6 lg:px-8">
    <div class="flex flex-row items-center justify-between">
     <div class="lg:w-4/12">
@@ -61,21 +61,21 @@
      </div>
     </div>
     <div class="lg:w-3/12 flex justify-end items-center">
-     <button class="inline-flex items-center justify-center focus:outline-none py-1 pr-2 pl-2">
+     <button class="md:hidden inline-flex items-center justify-center focus:outline-none py-1 pr-2 pl-2" @click="searchButton=!searchButton">
       <svg aria-hidden="true" class="w-5 h-5 text-[#004481] dark:text-gray-400" fill="none"
            stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
       </svg>
      </button>
      <div class="inline-flex items-center justify-center mobile__seperator"></div>
-     <button class="inline-flex items-center justify-center focus:outline-none py-1 pr-2 pl-2">
+     <router-link to="/hesabim" class="inline-flex items-center justify-center focus:outline-none py-1 pr-2 pl-2">
       <svg aria-hidden="true" class="w-5 h-5 fill-[#004481] dark:text-gray-400" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
        <path xmlns="http://www.w3.org/2000/svg"
              d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"/>
       </svg>
-     </button>
+     </router-link>
      <div class="inline-flex items-center justify-center mobile__seperator"></div>
-     <button class="inline-flex items-center justify-center focus:outline-none py-1 pr-2 pl-2">
+     <button class="inline-flex items-center justify-center focus:outline-none py-1 pr-2 pl-2" @click="showCart = true">
       <span class="relative inline-block">
        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="fill-[#004481] dark:text-gray-400" width="20" height="20">
         <path xmlns="http://www.w3.org/2000/svg"
