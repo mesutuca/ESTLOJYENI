@@ -1,5 +1,9 @@
-import {createRouter, createWebHistory} from 'vue-router'
+import {createRouter, createWebHistory, RouterView} from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import UserSettings from "@/views/settings/UserSettings.vue";
+import UserEmailsSubscriptions from "@/views/settings/UserEmailsSubscriptions.vue";
+import UserProfile from "@/views/settings/UserProfile.vue";
+import UserProfilePreview from "@/views/settings/UserProfilePreview.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -30,10 +34,126 @@ const router = createRouter({
       component: () => import('../views/Sifremi-unuttum.vue')
     },
     {
+      path: '/settings',
+      // You could also have named views at tho top
+      component: UserSettings,
+      children: [
+        {
+          path: 'emails',
+          component: UserEmailsSubscriptions,
+        },
+        {
+          path: 'profile',
+          components: {
+            default: UserProfile,
+            helper: UserProfilePreview,
+          },
+        },
+      ],
+    },
+    {
       path: '/hesabim',
       name: 'hesabim',
-      component: () => import('../views/Account.vue')
+      component: () => import('../views/AccountWidget.vue'),
+      children: [
+        {
+          name: 'uyelik.show',
+          path: '',
+          component: RouterView,
+          children: [
+            {
+              path: 'uyelik-bilgilerim',
+              name: 'uyelik-bilgilerim',
+              component: () => import('../views/Account/uyelik-bilgilerim.vue')
+            },
+            {
+              path: 'sifre-degisikligi',
+              name: 'sifre-degisikligi',
+              component: () => import('../views/Account/sifre-degisikligi.vue')
+            },
+            {
+              path: 'iletisim-tercihlerim',
+              name: 'iletisim-tercihlerim',
+              component: () => import('../views/Account/iletisim-tercihlerim.vue')
+            },
+            {
+              path: 'kayitli-kartlarim',
+              name: 'kayitli-kartlarim',
+              component: () => import('../views/Account/kayitli-kartlarim.vue')
+            },
+            {
+              path: 'iban',
+              name: 'iban',
+              component: () => import('../views/Account/iban.vue')
+            },
+            {
+              path: 'adreslerim',
+              name: 'adreslerim',
+              component: () => import('../views/Account/adreslerim.vue')
+            },
+          ]
+        },
+        {
+          name: 'sepet.show',
+          path: '',
+          component: RouterView,
+          children: [
+            {
+              path: 'siparislerim',
+              name: 'siparislerim',
+              component: () => import('../views/Account/siparislerim.vue')
+            },
+            {
+              path: 'iade-ve-iptal-taleplerim',
+              name: 'iade-ve-iptal-taleplerim',
+              component: () => import('../views/Account/iade-ve-iptal.vue')
+            }
+          ]
+        }
+
+        /*{
+          path: 'uyelik-bilgilerim',
+          name: 'uyelik-bilgilerim',
+          component: () => import('../views/Account/uyelik-bilgilerim.vue')
+        },
+        {
+          path: 'sifre-degisikligi',
+          name: 'sifre-degisikligi',
+          component: () => import('../views/Account/sifre-degisikligi.vue')
+        },
+        {
+          path: 'iletisim-tercihlerim',
+          name: 'iletisim-tercihlerim',
+          component: () => import('../views/Account/iletisim-tercihlerim.vue')
+        },
+        {
+          path: 'kayitli-kartlarim',
+          name: 'kayitli-kartlarim',
+          component: () => import('../views/Account/kayitli-kartlarim.vue')
+        },
+        {
+          path: 'iban',
+          name: 'iban',
+          component: () => import('../views/Account/iban.vue')
+        },
+        {
+          path: 'adreslerim',
+          name: 'adreslerim',
+          component: () => import('../views/Account/adreslerim.vue')
+        },
+        {
+          path: 'siparislerim',
+          name: 'siparislerim',
+          component: () => import('../views/Account/siparislerim.vue')
+        },
+        {
+          path: 'iade-ve-iptal-taleplerim',
+          name: 'iade-ve-iptal-taleplerim',
+          component: () => import('../views/Account/iade-ve-iptal.vue')
+        },*/
+      ]
     },
+
     {
       path: '/iletisim',
       name: 'iletisim',
