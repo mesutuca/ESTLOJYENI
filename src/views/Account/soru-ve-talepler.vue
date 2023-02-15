@@ -1,10 +1,10 @@
 <template>
- <h3>sipariş</h3>
+
 </template>
 
 <script>
 export default {
-		name: "siparislerim"
+ name: "soru-ve-talepler"
 }
 </script>
 

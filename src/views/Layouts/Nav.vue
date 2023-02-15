@@ -4,6 +4,15 @@
    <nav class="navigation">
     <ul class="navbar-item">
      <li class="item">
+      <RouterLink to="/">ANASAYDA</RouterLink>
+     </li>
+     <li class="item">
+      <RouterLink to="/hesabim">HESABIM</RouterLink>
+     </li>
+     <li class="item">
+      <RouterLink to="/iletisim">İLETİŞİM</RouterLink>
+     </li>
+     <li class="item">
       <RouterLink to="">YÜZÜK</RouterLink>
      </li>
      <li class="item">

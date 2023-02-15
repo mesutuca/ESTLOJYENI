@@ -3,7 +3,12 @@
   <Top/>
   <Header/>
   <Nav/>
-  <router-view/>
+  <!-- Main -->
+  <router-view v-slot="{Component,route}">
+   <component :is="Component" :key="route.path"></component>
+  </router-view>
+
+
  </div>
 </template>
 <script setup>
@@ -37,10 +42,30 @@ function useBreakpoints() {
  const width = computed(() => windowWidth.value)
  return {width, type}
 }
+
 const {width, type} = useBreakpoints()
 provide('screenType', type)
 
 </script>
-<style scoped>
+<style lang="scss">
+.fade-enter-active,
+.fade-leave-active {
+ transition: opacity 0.3s;
+}
 
+.fade-enter,
+.fade-leave-to {
+ opacity: 0;
+}
+
+.scale-enter-active,
+.scale-leave-active {
+ transition: all 0.5s ease;
+}
+
+.scale-enter-from,
+.scale-leave-to {
+ opacity: 0;
+ transform: scale(0.9);
+}
 </style>
