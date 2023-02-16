@@ -45,48 +45,77 @@ const router = createRouter({
       children: [
         {
           path: '',
-          name: 'uyelik',
+          name: 'uyelik.show',
           component: hesabim,
         },
         {
           path: 'uyelik-bilgilerim',
           name: 'uyelik-bilgilerim',
-          component: () => import('../views/Account/uyelik-bilgilerim.vue')
+          component: () => import('../views/Account/uyelik-bilgilerim.vue'),
+          meta: {
+            activePage: 'uyelik'
+          }
         },
         {
           path: 'sifre-degisikligi',
           name: 'sifre-degisikligi',
-          component: () => import('../views/Account/sifre-degisikligi.vue')
+          component: () => import('../views/Account/sifre-degisikligi.vue'),
+          meta: {
+            activePage: 'uyelik'
+          }
         },
         {
           path: 'iletisim-tercihlerim',
           name: 'iletisim-tercihlerim',
-          component: () => import('../views/Account/iletisim-tercihlerim.vue')
+          component: () => import('../views/Account/iletisim-tercihlerim.vue'),
+          meta: {
+            activePage: 'uyelik'
+          }
         },
         {
           path: 'kayitli-kartlarim',
           name: 'kayitli-kartlarim',
-          component: () => import('../views/Account/kayitli-kartlarim.vue')
+          component: () => import('../views/Account/kayitli-kartlarim.vue'),
+          meta: {
+            activePage: 'uyelik'
+          }
         },
         {
           path: 'iban',
           name: 'iban',
-          component: () => import('../views/Account/iban.vue')
+          component: () => import('../views/Account/iban.vue'),
+          meta: {
+            activePage: 'uyelik'
+          }
         },
         {
           path: 'adreslerim',
           name: 'adreslerim',
-          component: () => import('../views/Account/adreslerim.vue')
+          component: () => import('../views/Account/adreslerim.vue'),
+          meta: {
+            activePage: 'uyelik'
+          }
         },
         {
           path: 'siparislerim',
           name: 'siparislerim',
-          component: () => import('../views/Account/siparislerim.vue')
+          component: () => import('../views/Account/siparislerim.vue'),
+          meta: {
+            activePage: 'siparis'
+          }
         },
         {
           path: 'iade-ve-iptal-taleplerim',
           name: 'iade-ve-iptal-taleplerim',
-          component: () => import('../views/Account/iade-ve-iptal.vue')
+          component: () => import('../views/Account/iade-ve-iptal.vue'),
+          meta: {
+            activePage: 'siparis'
+          }
+        },
+        {
+          path: 'soru-ve-taleplerim',
+          name: 'soru-ve-taleplerim',
+          component: () => import('../views/Account/soru-ve-taleplerim.vue'),
         }
       ]
     },
