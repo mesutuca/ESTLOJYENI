@@ -5,6 +5,7 @@
     <li class="navigation-item">
      <router-link custom :to="{name:'uyelik'}" v-slot="{href, navigate, isActive, isExactActive}">
       {{ isExactActive}} {{ isActive}}
+							href
       <a :href="href" @click="navigate" class="item cursor-pointer" :class="{ 'uk-active active': isActive || isExactActive || subIsActive('/uyelik') }">
        <div class="user-icon icon-size"></div>
        <span>Kullanıcı bilgilerim</span>

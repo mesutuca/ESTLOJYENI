@@ -1,15 +1,13 @@
 <template>
- <div class="flex flex-col min-h-full">
-  <Top/>
-  <Header/>
-  <Nav/>
-  <!-- Main -->
-  <router-view v-slot="{Component,route}">
-   <component :is="Component" :key="route.path"></component>
-  </router-view>
+		<div class="flex flex-col min-h-full">
+				<Top/>
+				<Header/>
+				<Nav/>
+				<!-- Main -->
+				<router-view/>
 
 
- </div>
+		</div>
 </template>
 <script setup>
 import {provide, ref, onMounted, onUnmounted, computed, watch,} from "vue";
@@ -23,24 +21,24 @@ provide('openMenu', openMenu)
 
 
 function useBreakpoints() {
- let windowWidth = ref(window.innerWidth)
- const onWidthChange = () => windowWidth.value = window.innerWidth
- onMounted(() => window.addEventListener('resize', onWidthChange))
- onUnmounted(() => window.removeEventListener('resize', onWidthChange))
- const type = computed(() => {
-  if (windowWidth.value < 550) {
-   return 'mobile'
-  }
-  if (windowWidth.value >= 550 && windowWidth.value < 1200) {
-   return 'tablet'
-  }
-  if (windowWidth.value >= 1200) {
-   return 'desktop'
-  }
-  return null;
- })
- const width = computed(() => windowWidth.value)
- return {width, type}
+		let windowWidth = ref(window.innerWidth)
+		const onWidthChange = () => windowWidth.value = window.innerWidth
+		onMounted(() => window.addEventListener('resize', onWidthChange))
+		onUnmounted(() => window.removeEventListener('resize', onWidthChange))
+		const type = computed(() => {
+				if (windowWidth.value < 550) {
+						return 'mobile'
+				}
+				if (windowWidth.value >= 550 && windowWidth.value < 1200) {
+						return 'tablet'
+				}
+				if (windowWidth.value >= 1200) {
+						return 'desktop'
+				}
+				return null;
+		})
+		const width = computed(() => windowWidth.value)
+		return {width, type}
 }
 
 const {width, type} = useBreakpoints()
@@ -50,22 +48,22 @@ provide('screenType', type)
 <style lang="scss">
 .fade-enter-active,
 .fade-leave-active {
- transition: opacity 0.3s;
+		transition: opacity 0.3s;
 }
 
 .fade-enter,
 .fade-leave-to {
- opacity: 0;
+		opacity: 0;
 }
 
 .scale-enter-active,
 .scale-leave-active {
- transition: all 0.5s ease;
+		transition: all 0.5s ease;
 }
 
 .scale-enter-from,
 .scale-leave-to {
- opacity: 0;
- transform: scale(0.9);
+		opacity: 0;
+		transform: scale(0.9);
 }
 </style>
