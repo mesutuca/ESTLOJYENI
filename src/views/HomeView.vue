@@ -38,27 +38,16 @@ import {ref} from "vue";
 const getUyelik = [
  {
   title: 'asd',
-  img: 'https://puretech.com.tr/en/wp-content/uploads/sites/2/slider1/Yakut-banner-e.jpeg',
- }, {
-  title: 'asd',
-  img: 'https://puretech.com.tr/en/wp-content/uploads/sites/2/2021/12/Cocuklu-Banner-e.jpg',
+  img: 'https://st.myideasoft.com/idea/kc/78/myassets/slider_pictures/pictures_1_2.jpg?revision=1676476564',
  },
  {
   title: 'asd',
-  img: 'https://st3.myideasoft.com/idea/kc/78/myassets/products/242/https-bellona-mncdn-com-mnresize-1280-720-img-image-tr-58lss8005y0y0-2_min.jpg?revision=1672816890',
+  img: 'https://st.myideasoft.com/idea/kc/78/myassets/slider_pictures/pictures_1_4.jpg?revision=1676476564',
  },
  {
   title: 'asd',
-  img: 'https://st3.myideasoft.com/idea/kc/78/myassets/products/242/https-bellona-mncdn-com-mnresize-1280-720-img-image-tr-58lss8005y0y0-2_min.jpg?revision=1672816890',
- },
- {
-  title: 'asd',
-  img: 'https://st3.myideasoft.com/idea/kc/78/myassets/products/242/https-bellona-mncdn-com-mnresize-1280-720-img-image-tr-58lss8005y0y0-2_min.jpg?revision=1672816890',
- },
- {
-  title: 'asd',
-  img: 'https://st3.myideasoft.com/idea/kc/78/myassets/products/242/https-bellona-mncdn-com-mnresize-1280-720-img-image-tr-58lss8005y0y0-2_min.jpg?revision=1672816890',
- },
+  img: 'https://st.myideasoft.com/idea/kc/78/myassets/slider_pictures/pictures_1_7.jpg?revision=1676476564',
+ }
 ]
 const getUyelik2 = [
  {
@@ -78,6 +67,55 @@ const getUyelik2 = [
  },
 ]
 </script>
-<style>
+<style lang="scss">
+.homeSlider {
+ &.has-dots {
+  margin: 0;
+ }
 
+ .carousel__slide {
+  padding: 0;
+  width: var(--carousel-slide-width, 100%);
+ }
+
+ .carousel__button svg {
+  stroke-width: 3px;
+  stroke-linejoin: revert;
+  stroke-linecap: butt;
+  width: var(--carousel-button-svg-width, 80%);
+  height: var(--carousel-button-svg-height, 80%);
+  stroke: #fec438;
+ }
+
+ .carousel__dots {
+  color: #fec438;
+  top: calc(90% + 0.5rem);
+
+  .carousel__dot {
+
+   transition-duration: 0.4s;
+   -webkit-transition-duration: 0.4s;
+   -moz-transition-duration: 0.4s;
+   -ms-transition-duration: 0.4s;
+   -o-transition-duration: 0.4s;
+
+   &:after {
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+   }
+
+   &.is-selected {
+    width: 36px;
+
+    &:after {
+     width: 30px;
+     border-radius: 10px;
+    }
+   }
+  }
+ }
+
+
+}
 </style>
