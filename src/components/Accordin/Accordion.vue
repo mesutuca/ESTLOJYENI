@@ -1,5 +1,5 @@
 <template>
- <dl class="accordion box w-full" role="presentation">
+ <dl id="accordion-2" class="accordion box w-full" role="presentation">
   <accordion-item
       v-for="item in content"
       :multiple="multiple"
