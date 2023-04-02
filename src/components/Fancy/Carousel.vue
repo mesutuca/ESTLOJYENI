@@ -1,12 +1,12 @@
 <template>
-		<div :id="name" class="carousel">
+		<div :id="name" class="f-carousel">
 				<slot/>
 		</div>
 </template>
 
 <script>
 import {Carousel} from '@fancyapps/ui';
-import {Autoplay} from '@fancyapps/ui/dist/carousel.autoplay.esm.js';
+import {Autoplay} from '@fancyapps/ui/dist/carousel/carousel.autoplay.esm'
 
 Carousel.Plugins.Autoplay = Autoplay;
 export default {
