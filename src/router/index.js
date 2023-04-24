@@ -24,6 +24,11 @@ const router = createRouter({
       component: () => import('../views/AboutView.vue')
     },
     {
+      path: '/sayfam',
+      name: 'sayfam',
+      component: () => import('../views/SayfamView.vue')
+    },
+    {
       path: '/giris',
       name: 'giris',
       component: () => import('../views/GirisView.vue')
