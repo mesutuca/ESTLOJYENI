@@ -1,7 +1,7 @@
 <template>
 
 		<div class="flex sm:items-center sm:justify-center min-h-screen min-w-screen md:p-6 ">
-				<div class="flex md:w-full w-full md:max-w-8xl sm:rounded-2xl sm:shadow overflow-hidden bg-white">
+				<div class="flex md:w-full w-full md:max-w-9xl sm:rounded-2xl sm:shadow overflow-hidden bg-white">
 						<!--    sm:w-auto py-8 px-4 sm:p-12 md:p-16-->
 						<div class="w-full">
 								<div class="w-full py-10">

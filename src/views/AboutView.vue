@@ -1,7 +1,7 @@
 <template>
   <div class="about bg-white w-full block">
     <div class="border-b">
-      <div class="container max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="container max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center overflow-x-auto">
           <div class="header-left w-full">
             <ul class="flex flex-row gap-2 w-full">
@@ -37,7 +37,7 @@
         <h2 class="uppercase font-medium">Ottoman Koltuk Takımı - Lacivert-Krem (Krom Ayaklı)</h2>
       </div>
     </div>
-    <div class="container max-w-8xl mx-auto py-6 sm:px-6 lg:px-8">
+    <div class="container max-w-9xl mx-auto py-6 sm:px-6 lg:px-8">
       <div class="w-full mx-auto text-gray-800 relative md:text-left p-8 md:p-0 xl:p-0">
         <div class="md:flex items-start">
           <div class="w-full md:w-8/12 px-0 md:px-10 mb-10 md:mb-0 detail">
@@ -554,7 +554,7 @@
         </div>
       </div>
     </div>
-    <div class="max-w-8xl mx-auto py-6 sm:px-6 lg:px-8 detail" id="slider" key="2">
+    <div class="max-w-9xl mx-auto py-6 sm:px-6 lg:px-8 detail" id="slider" key="2">
       <div class="w-full p-8 mx-auto text-gray-800 relative md:text-left">
         <div class="mb-4">
           <h2 class="text-center font-medium mb-6 text-2xl">ÜRÜNLERİMİZ</h2>

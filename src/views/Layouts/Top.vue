@@ -1,63 +1,66 @@
 <template>
-  <div class="top bg-gray-50 border-b hidden sm:block">
-    <div class="container max-w-8xl mx-auto px-8">
-      <div class="flex items-center justify-between w-full top-menu">
-        <div class="top-left">
-          <ul class="flex flex-wrap">
-            <li>
-              <a href="">İletişim</a>
-            </li>
-            <li>
-              <a href="">Kampanyalar</a>
-            </li>
-            <li>
-              <a href="">Blog</a>
-            </li>
-          </ul>
-        </div>
-        <div class="top-right">
-          <ul class="flex flex-wrap">
-            <li>
-              <a href="">Sipariş Takip</a>
-            </li>
-            <li>
-              <a href="">+90 542 443 87 00</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
+	<div class="top hidden sm:block bg-[#131d33]">
+		<div class="container max-w-9xl mx-auto">
+			<div class="flex items-center justify-between w-full top-menu">
+				<div class="top-left">
+					<ul class="flex flex-wrap">
+						<li>
+							<a href="">234, Triumph St, Los Angeles, California, US.</a>
+						</li>
+						<li>
+							<a href="">Mon - Satday: 9.00 am to 6.00 pm.</a>
+						</li>
+					</ul>
+				</div>
+				<div class="top-right">
+					<ul class="flex flex-wrap">
+						<li>
+							<a href="">Sipariş Takip</a>
+						</li>
+						<li>
+							<a href="">+90 542 443 87 00</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
 </template>
 
 <script>
 export default {
-  name: "Top"
+	name: "Top"
 }
 </script>
 
 <style lang="scss">
 .top-menu {
-  ul {
-    li {
-      border-left: 1px solid #e2e2e2;
+	ul {
+		li {
+			border-left: 1px solid rgba(255, 255, 255, 0.2);
 
-      a {
-        display: flex;
-        align-items: center;
-        height: 44px;
-        color: #696969;
-        line-height: calc(12px + 8px);
-        font-size: 12px;
-        font-weight: 400;
-        padding: 0 16px;
-        transition: all .2s linear;
-      }
+			a {
+				display: flex;
+				align-items: center;
+				height: 44px;
+				color: white;
+				line-height: calc(12px + 8px);
+				font-size: 12px;
+				font-weight: 400;
+				padding: 0 16px;
+				transition: all .2s linear;
+			}
 
-      &:last-child {
-        border-right: 1px solid #e2e2e2;
-      }
-    }
-  }
+			&:first-child {
+				border-left: none;
+			}
+
+			&:last-child {
+				border-right: none;
+			}
+		}
+
+
+	}
 }
 </style>

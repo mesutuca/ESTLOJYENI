@@ -1,5 +1,8 @@
 @import "fonts/poppins/poppins.css";
 @import "fonts/flaticon/flaticon.css";
+@import '@fancyapps/ui/dist/carousel/carousel.css';
+@import '@fancyapps/ui/dist/carousel/carousel.thumbs.css';
+@import '@fancyapps/ui/dist/fancybox/fancybox.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -45,7 +48,7 @@ input[type=checkbox]:checked:before {
 
 .navbar-item {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   padding: 0 10px;
 }
 
@@ -56,7 +59,7 @@ input[type=checkbox]:checked:before {
 }
 
 .navbar-item .item a {
-  color: #0c3b5d;
+  color: white;
   float: left;
   font-size: 14px;
   font-weight: 500;

@@ -1,5 +1,5 @@
 <template>
- <div class="container max-w-8xl mx-auto py-6 sm:px-6 lg:px-8">
+ <div class="container max-w-9xl mx-auto py-6 sm:px-6 lg:px-8">
   <div class="md:flex items-start">
    <AccountLayout/>
 
